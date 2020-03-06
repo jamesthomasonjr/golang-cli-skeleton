@@ -1,9 +1,10 @@
-module github.com/jamesthomasonjr/golang-cli-skeleton
+module skeleton
 
 go 1.13
 
 require (
 	github.com/adrg/xdg v0.2.1
+	github.com/logrusorgru/aurora v0.0.0-20200102142835-e9ef32dff381
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/pelletier/go-toml v1.6.0 // indirect
 	github.com/spf13/afero v1.2.2 // indirect

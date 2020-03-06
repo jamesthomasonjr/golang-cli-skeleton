@@ -1,11 +1,8 @@
 # Don't save executables
-bin/**
-
-# But do keep the directories
-!**/.gitkeep
+bin/
 
 # Don't save environment customizations
-config/**
+.config/**
 
 # But do save the dist files
-!config/**/*.dist
+!.config/**/*.dist

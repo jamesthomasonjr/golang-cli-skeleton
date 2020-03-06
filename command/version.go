@@ -5,7 +5,7 @@ import (
 
     "github.com/spf13/cobra"
 
-    "github.com/jamesthomasonjr/golang-cli-skeleton/version"
+    "skeleton/version"
 )
 
 var (
@@ -13,10 +13,10 @@ var (
         Use:   "version",
         Short: "Display version information",
         Long:  fmt.Sprintf("version shows the version details for the %s application.", version.ApplicationName()),
-        Run: func(cmd *cobra.Command, args []string) {
-            fmt.Println(version.MainVersionLine())
-            fmt.Println(version.GitVersionLine())
-            fmt.Println(version.BuildVersionLine())
-        },
+        Run: executeVersionCommand,
     }
 )
+
+func executeVersionCommand(cmd *cobra.Command, args []string) {
+    fmt.Println(version.VersionTemplate())
+}

@@ -1,0 +1,4 @@
+BINARY_NAME       ?= main
+APPLICATION_NAME  ?= skeleton
+SHORT_DESCRIPTION ?= skeleton application
+LONG_DESCRIPTION  ?= skeleton application in go
